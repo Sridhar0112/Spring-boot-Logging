@@ -1,112 +1,54 @@
 package com.sridhar.springboot.Dto;
 
 
+import com.sridhar.springboot.Validation.ValidCourse;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.util.Map;
 
 public class StudentDto {
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class StudentResponse{
         String message;
         String name;
-
-        public StudentResponse(String message, String name) {
-            this.message = message;
-            this.name = name;
-        }
-
-        public StudentResponse() {
-        }
-
-        public String getMessage() {
-            return message;
-        }
-
-        public void setMessage(String message) {
-            this.message = message;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
     }
-
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
     public static class StudentRequest{
         private int ID;
+        @NotBlank(message = "student name is must required")
+        @Size(max = 25,min = 3,message = "Name must contain 3 to 20 characters")
         private String name;
+        @NotBlank(message = "course must required")
+        @ValidCourse
         private String course;
-
-        public StudentRequest() {
-        }
-
-        public StudentRequest(int ID, String name, String course) {
-            this.ID = ID;
-            this.name = name;
-            this.course = course;
-        }
-
-        public int getID() {
-            return ID;
-        }
-
-        public void setID(int ID) {
-            this.ID = ID;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public String getCourse() {
-            return course;
-        }
-
-        public void setCourse(String course) {
-            this.course = course;
-        }
     }
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
     public static class ErrorResponse{
         String errormsg;
         LocalTime localTime;
         String Details;
+    }
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class ApiErrorResponse {
+        private LocalDateTime timestamp;
+        private int status;
+        private String message;
+        private String path;
+        private Map<?, ?> errors;
 
-        public ErrorResponse() {
-        }
-
-        public ErrorResponse(String errormsg, LocalTime localTime, String details) {
-            this.errormsg = errormsg;
-            this.localTime = localTime;
-            Details = details;
-        }
-
-        public String getErrormsg() {
-            return errormsg;
-        }
-
-        public void setErrormsg(String errormsg) {
-            this.errormsg = errormsg;
-        }
-
-        public LocalTime getLocalTime() {
-            return localTime;
-        }
-
-        public void setLocalTime(LocalTime localTime) {
-            this.localTime = localTime;
-        }
-
-        public String getDetails() {
-            return Details;
-        }
-
-        public void setDetails(String details) {
-            Details = details;
-        }
     }
 }

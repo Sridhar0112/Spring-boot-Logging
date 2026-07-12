@@ -4,34 +4,44 @@ import com.sridhar.springboot.Dto.StudentDto;
 import com.sridhar.springboot.Exception.StudentException;
 import com.sridhar.springboot.Repositary.StudentRepository;
 import com.sridhar.springboot.models.Student;
-import org.springframework.http.ResponseEntity;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
+
+@Slf4j
 @Service
 public class StudentService {
 
     private final StudentRepository studentRepository;
 
     public StudentService(StudentRepository studentRepository){
-        this.studentRepository=studentRepository;
+        this.studentRepository = studentRepository;
     }
 
     public Student AddStudent(StudentDto.StudentRequest student){
+        log.info("Student creation request received");
         if(student==null || student.getCourse()==null || student.getName()==null){
+            log.warn("Student creation failed. Mandatory fields missing");
             throw new StudentException("Student details cannot be empty");
         }
         Student s= new Student();
         s.setCourse(student.getCourse());
         s.setID(student.getID());
         s.setName(student.getName());
-        return studentRepository.save(s);
+        Student savedstudent= studentRepository.save(s);
+        log.info(
+                "Student created successfully. StudentId={}, Name={}",
+                savedstudent.getID(),
+                savedstudent.getName()
+        );
+        return savedstudent;
     }
 
     public List<Student> getStudents(){
         try{
+            log.info("Fetching all students");
             return studentRepository.findAll();
         }
         catch(Exception e){

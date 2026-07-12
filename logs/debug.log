@@ -1,0 +1,68 @@
+2026-07-12 23:48:38
+                DEBUG
+                [main]
+                [requestId=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-12 23:50:31
+                DEBUG
+                [main]
+                [requestId=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-12 23:59:24
+                DEBUG
+                [main]
+                [requestId=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-12 23:59:27
+                DEBUG
+                [main]
+                [requestId=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Filter 'requestLoggingFilter' configured for use
+2026-07-13 00:04:35
+                DEBUG
+                [main]
+                [requestId=]
+                [c.s.springboot.SpringbootApplication]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                -
+                Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-13 00:04:37
+                DEBUG
+                [main]
+                [requestId=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                -
+                Filter 'requestLoggingFilter' configured for use
+2026-07-13 00:06:09
+                DEBUG
+                [main]
+                [requestId=]
+                [c.s.springboot.SpringbootApplication]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                -
+                Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-13 00:06:10
+                DEBUG
+                [main]
+                [requestId=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                -
+                Filter 'requestLoggingFilter' configured for use

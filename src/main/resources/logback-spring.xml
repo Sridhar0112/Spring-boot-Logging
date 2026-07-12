@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <!-- Log directory -->
+    <property name="LOG_PATH" value="logs"/>
+    <!-- =========================
+         Console Logging
+         ========================= -->
+    <appender name="CONSOLE"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] [requestId=%X{requestId}] [clientIp=%X{clientIp}] [userAgent=%X{userAgent}] [%logger{36}] -
+                %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- =========================
+         Application INFO Logs
+         ========================= -->
+
+    <appender name="APPLICATION_FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/application.log</file>
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>
+                ${LOG_PATH}/archive/application-%d{yyyy-MM-dd}.%i.log.gz
+            </fileNamePattern>
+            <!-- Rotate when file reaches 10MB -->
+            <maxFileSize>10MB</maxFileSize>
+            <!-- Keep 30 days -->
+            <maxHistory>30</maxHistory>
+            <!-- Maximum archive size -->
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss}
+                %-5level
+                [%thread]
+                [requestId=%X{requestId}]
+                [clientIp=%X{clientIp}]
+                [userAgent=%X{userAgent}]
+                [%logger{36}]
+                -
+                %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- =========================
+         Error + Warning Logs
+         ========================= -->
+
+    <appender name="ERROR_FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/error.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>
+                ${LOG_PATH}/archive/error-%d{yyyy-MM-dd}.%i.log.gz
+            </fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>500MB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss}
+                %-5level
+                [%thread]
+                [requestId=%X{requestId}]
+                [clientIp=%X{clientIp}]
+                [userAgent=%X{userAgent}]
+                [%logger{36}]
+                -
+                %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- =========================
+         Debug Logs
+         ========================= -->
+
+
+    <appender name="DEBUG_FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/debug.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>
+                ${LOG_PATH}/archive/debug-%d{yyyy-MM-dd}.%i.log.gz
+            </fileNamePattern>
+            <maxFileSize>10MB</maxFileSize>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss}
+                %-5level
+                [%thread]
+                [%logger{36}]
+                [requestId=%X{requestId}]
+                [clientIp=%X{clientIp}]
+                [userAgent=%X{userAgent}]
+                -
+                %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- =========================
+         Application Package Logging
+         ========================= -->
+
+    <logger name="com.sridhar.springboot"
+            level="DEBUG"
+            additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="APPLICATION_FILE"/>
+        <appender-ref ref="ERROR_FILE"/>
+        <appender-ref ref="DEBUG_FILE"/>
+    </logger>
+
+    <!-- =========================
+         Root Logger
+         ========================= -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="APPLICATION_FILE"/>
+        <appender-ref ref="ERROR_FILE"/>
+    </root>
+</configuration>

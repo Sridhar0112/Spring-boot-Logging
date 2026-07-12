@@ -1,0 +1,106 @@
+2026-07-12 23:04:52
+                ERROR
+                [http-nio-8080-exec-1]
+                [requestId=cd08d015-9401-49c2-8dde-9dc8c30b8ccc]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                StudentDto.ApiErrorResponse(timestamp=2026-07-12T23:04:52.375594100, status=400, message=Validation Failed - Invalid Request, path=/student/add, errors={name=[student name is must required, Name must contain 3 to 20 characters], course=[Invalid Course]})
+2026-07-12 23:05:41
+                ERROR
+                [http-nio-8080-exec-2]
+                [requestId=add8c625-82de-4e44-b888-701d8ed42ec2]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                StudentDto.ApiErrorResponse(timestamp=2026-07-12T23:05:41.366321800, status=400, message=Validation Failed - Invalid Request, path=/student/add, errors={name=[student name is must required, Name must contain 3 to 20 characters], course=[Invalid Course]})
+2026-07-12 23:40:13
+                ERROR
+                [http-nio-8080-exec-1]
+                [requestId=d357b609-5136-44d8-9549-c711ddfefcc9]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Validation Failed URI=/student/add Errors={name=[student name is must required, Name must contain 3 to 20 characters], course=[Invalid Course]}
+2026-07-12 23:40:41
+                ERROR
+                [http-nio-8080-exec-2]
+                [requestId=bd906077-a2a0-48f1-ab85-f8c4bd9759f9]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Method Validation Failed URI=/student/getstudent/0 Errors={id=[ID must be greater than 0]}
+2026-07-12 23:48:46
+                WARN 
+                [main]
+                [requestId=]
+                [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration]
+                -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 23:50:35
+                WARN 
+                [main]
+                [requestId=]
+                [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration]
+                -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 23:59:30
+                WARN 
+                [main]
+                [requestId=]
+                [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration]
+                -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-12 23:59:40
+                ERROR
+                [http-nio-8080-exec-2]
+                [requestId=a15c235a-a4a4-4018-851e-a9c1062a2458]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Validation Failed URI=/student/add Errors={name=[student name is must required, Name must contain 3 to 20 characters], course=[Invalid Course]}
+2026-07-13 00:04:40
+                WARN 
+                [main]
+                [requestId=]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration]
+                -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-13 00:06:13
+                WARN 
+                [main]
+                [requestId=]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration]
+                -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-13 00:06:25
+                ERROR
+                [http-nio-8080-exec-1]
+                [requestId=9980956f-3539-40a1-9c47-92302e2f1023]
+                [requestId=9980956f-3539-40a1-9c47-92302e2f1023]
+                [clientIp=0:0:0:0:0:0:0:1]
+                [userAgent=bruno-runtime/3.2.2]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Validation Failed URI=/student/add Errors={name=[student name is must required, Name must contain 3 to 20 characters], course=[Invalid Course]}
+2026-07-13 00:10:00
+                WARN 
+                [HikariPool-1:housekeeper]
+                [requestId=]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.pool.HikariPool]
+                -
+                HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m48s773ms915µs900ns).
+2026-07-13 00:10:02
+                ERROR
+                [http-nio-8080-exec-2]
+                [requestId=e9b09f1e-9166-48e5-827c-a93616292fac]
+                [requestId=e9b09f1e-9166-48e5-827c-a93616292fac]
+                [clientIp=0:0:0:0:0:0:0:1]
+                [userAgent=bruno-runtime/3.2.2]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Validation Failed URI=/student/add Errors={name=[student name is must required, Name must contain 3 to 20 characters], course=[Invalid Course]}
