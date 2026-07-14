@@ -2,7 +2,7 @@ package com.sridhar.springboot.Service;
 
 import com.sridhar.springboot.Dto.StudentDto;
 import com.sridhar.springboot.Exception.StudentException;
-import com.sridhar.springboot.Repositary.StudentRepository;
+import com.sridhar.springboot.Repository.StudentRepository;
 import com.sridhar.springboot.logging.util.LoggingMaskUtil;
 import com.sridhar.springboot.models.Student;
 import lombok.extern.slf4j.Slf4j;
