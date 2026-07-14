@@ -17,5 +17,5 @@ public final class LoggingConstants {
     public static final String REQUEST_START = "Incoming Request";
     public static final String REQUEST_END = "Request Completed";
     public static final String START_TIME = "startTime";
-
+    public static final String SERVICE_NAME = "student-service";
 }

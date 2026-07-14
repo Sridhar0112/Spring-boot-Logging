@@ -9,11 +9,23 @@
          ========================= -->
     <appender name="CONSOLE"
               class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>
-                %d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] [requestId=%X{requestId}] [clientIp=%X{clientIp}] [userAgent=%X{userAgent}] [%logger{36}] -
-                %msg%n
-            </pattern>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp>
+                    <fieldName>timestamp</fieldName>
+                </timestamp>
+                <logLevel>
+                    <fieldName>level</fieldName>
+                </logLevel>
+                <mdc>
+                    <fieldName>context</fieldName>
+                </mdc>
+                <loggerName>
+                    <fieldName>class</fieldName>
+                </loggerName>
+                <message/>
+                <stackTrace/>
+            </providers>
         </encoder>
     </appender>
 
@@ -36,18 +48,23 @@
             <!-- Maximum archive size -->
             <totalSizeCap>1GB</totalSizeCap>
         </rollingPolicy>
-        <encoder>
-            <pattern>
-                %d{yyyy-MM-dd HH:mm:ss}
-                %-5level
-                [%thread]
-                [requestId=%X{requestId}]
-                [clientIp=%X{clientIp}]
-                [userAgent=%X{userAgent}]
-                [%logger{36}]
-                -
-                %msg%n
-            </pattern>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp>
+                    <fieldName>timestamp</fieldName>
+                </timestamp>
+                <logLevel>
+                    <fieldName>level</fieldName>
+                </logLevel>
+                <mdc>
+                    <fieldName>context</fieldName>
+                </mdc>
+                <loggerName>
+                    <fieldName>class</fieldName>
+                </loggerName>
+                <message/>
+                <stackTrace/>
+            </providers>
         </encoder>
     </appender>
 
@@ -70,18 +87,23 @@
             <maxHistory>30</maxHistory>
             <totalSizeCap>500MB</totalSizeCap>
         </rollingPolicy>
-        <encoder>
-            <pattern>
-                %d{yyyy-MM-dd HH:mm:ss}
-                %-5level
-                [%thread]
-                [requestId=%X{requestId}]
-                [clientIp=%X{clientIp}]
-                [userAgent=%X{userAgent}]
-                [%logger{36}]
-                -
-                %msg%n
-            </pattern>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp>
+                    <fieldName>timestamp</fieldName>
+                </timestamp>
+                <logLevel>
+                    <fieldName>level</fieldName>
+                </logLevel>
+                <mdc>
+                    <fieldName>context</fieldName>
+                </mdc>
+                <loggerName>
+                    <fieldName>class</fieldName>
+                </loggerName>
+                <message/>
+                <stackTrace/>
+            </providers>
         </encoder>
     </appender>
 
@@ -106,18 +128,23 @@
             <maxFileSize>10MB</maxFileSize>
             <maxHistory>7</maxHistory>
         </rollingPolicy>
-        <encoder>
-            <pattern>
-                %d{yyyy-MM-dd HH:mm:ss}
-                %-5level
-                [%thread]
-                [%logger{36}]
-                [requestId=%X{requestId}]
-                [clientIp=%X{clientIp}]
-                [userAgent=%X{userAgent}]
-                -
-                %msg%n
-            </pattern>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <timestamp>
+                    <fieldName>timestamp</fieldName>
+                </timestamp>
+                <logLevel>
+                    <fieldName>level</fieldName>
+                </logLevel>
+                <mdc>
+                    <fieldName>context</fieldName>
+                </mdc>
+                <loggerName>
+                    <fieldName>class</fieldName>
+                </loggerName>
+                <message/>
+                <stackTrace/>
+            </providers>
         </encoder>
     </appender>
 

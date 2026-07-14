@@ -32,11 +32,8 @@ public class RequestLoggingFilter extends OncePerRequestFilter {
         long startTime = System.currentTimeMillis();
         String requestId = traceIdManager.startTrace(request);
         try {
-            log.info(
-                    "Incoming Request : {} {}",
-                    request.getMethod(),
-                    request.getRequestURI()
-            );
+            log.info("Incoming Request : {} {}", request.getMethod(), request.getRequestURI());
+            MDC.put("service", "student-service");
             filterChain.doFilter(request, response);
         } finally {
             long executionTime =
