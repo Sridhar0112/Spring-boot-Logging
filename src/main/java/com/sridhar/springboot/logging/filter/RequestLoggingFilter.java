@@ -1,6 +1,7 @@
 package com.sridhar.springboot.logging.filter;
 
 import com.sridhar.springboot.logging.constants.LoggingConstants;
+import com.sridhar.springboot.logging.mdc.TraceIdManager;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -15,6 +16,12 @@ import java.util.UUID;
 @Slf4j
 @Component
 public class RequestLoggingFilter extends OncePerRequestFilter {
+    private final TraceIdManager traceIdManager;
+    public RequestLoggingFilter(
+            TraceIdManager traceIdManager
+    ){
+        this.traceIdManager = traceIdManager;
+    }
 
     @Override
     protected void doFilterInternal(
@@ -23,12 +30,8 @@ public class RequestLoggingFilter extends OncePerRequestFilter {
             FilterChain filterChain
     ) throws ServletException, IOException {
         long startTime = System.currentTimeMillis();
-        String requestId = UUID.randomUUID().toString();
+        String requestId = traceIdManager.startTrace(request);
         try {
-            MDC.put(LoggingConstants.REQUEST_ID, requestId);
-            MDC.put(LoggingConstants.CLIENT_IP, getClientIp(request));
-            MDC.put(LoggingConstants.USER_AGENT, request.getHeader(LoggingConstants.USER_AGENT));
-
             log.info(
                     "Incoming Request : {} {}",
                     request.getMethod(),
@@ -45,7 +48,7 @@ public class RequestLoggingFilter extends OncePerRequestFilter {
                     response.getStatus(),
                     executionTime
             );
-            MDC.remove(LoggingConstants.REQUEST_ID);
+            traceIdManager.clear();
         }
     }
 

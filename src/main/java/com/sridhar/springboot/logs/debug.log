@@ -1,0 +1,27 @@
+2026-07-14 00:53:29
+                DEBUG
+                [main]
+                [c.s.springboot.SpringbootApplication]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                -
+                Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-14 00:53:33
+                DEBUG
+                [main]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                -
+                Filter 'requestLoggingFilter' configured for use
+2026-07-14 01:40:04
+                DEBUG
+                [http-nio-8080-exec-4]
+                [c.s.s.Controller.StudentController]
+                [requestId=f2c0f39f-3d81-41b4-bd92-0c446d32b9a8]
+                [clientIp=]
+                [userAgent=]
+                -
+                Incoming student request StudentDto.StudentRequest(ID=123, name=sridhar s, course=java)

@@ -24,7 +24,7 @@ public class StudentDto {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class StudentRequest{
-        private int ID;
+        private Long ID;
         @NotBlank(message = "student name is must required")
         @Size(max = 25,min = 3,message = "Name must contain 3 to 20 characters")
         private String name;

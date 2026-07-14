@@ -1,45 +1,22 @@
 package com.sridhar.springboot.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Student {
-        @Id
-        private long ID;
-        private String name;
-        private String course;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long ID;
+    private String name;
+    private String course;
 
-        public Student() {
-        }
-
-        public Student(int ID, String name, String course) {
-            this.ID = ID;
-            this.name = name;
-            this.course = course;
-        }
-
-        public long getID() {
-            return ID;
-        }
-
-        public void setID(int ID) {
-            this.ID = ID;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public String getCourse() {
-            return course;
-        }
-
-        public void setCourse(String course) {
-            this.course = course;
-        }
-    }
+}

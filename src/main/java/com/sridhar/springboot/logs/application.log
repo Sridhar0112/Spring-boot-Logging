@@ -1,0 +1,533 @@
+2026-07-14 00:53:29
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                Starting SpringbootApplication using Java 17.0.17 with PID 4756 (D:\chrome\springboot\springboot-logging\target\classes started by Administrator in D:\chrome\springboot\springboot-logging\src\main\java\com\sridhar\springboot)
+2026-07-14 00:53:29
+                DEBUG
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-14 00:53:29
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                No active profile set, falling back to 1 default profile: "default"
+2026-07-14 00:53:30
+                INFO 
+                [background-preinit]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.h.validator.internal.util.Version]
+                -
+                HV000001: Hibernate Validator 9.1.0.Final
+2026-07-14 00:53:31
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.d.r.c.RepositoryConfigurationDelegate]
+                -
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 00:53:31
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.d.r.c.RepositoryConfigurationDelegate]
+                -
+                Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2026-07-14 00:53:32
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.boot.tomcat.TomcatWebServer]
+                -
+                Tomcat initialized with port 8080 (http)
+2026-07-14 00:53:32
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.coyote.http11.Http11NioProtocol]
+                -
+                Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-14 00:53:32
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.catalina.core.StandardService]
+                -
+                Starting service [Tomcat]
+2026-07-14 00:53:32
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.catalina.core.StandardEngine]
+                -
+                Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-14 00:53:32
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.w.c.s.WebApplicationContextInitializer]
+                -
+                Root WebApplicationContext: initialization completed in 2780 ms
+2026-07-14 00:53:33
+                DEBUG
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Filter 'requestLoggingFilter' configured for use
+2026-07-14 00:53:33
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.HikariDataSource]
+                -
+                HikariPool-1 - Starting...
+2026-07-14 00:53:33
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.pool.HikariPool]
+                -
+                HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a5fc44b8-df53-4354-8a31-e80ceac7e9ac user=SA
+2026-07-14 00:53:33
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.HikariDataSource]
+                -
+                HikariPool-1 - Start completed.
+2026-07-14 00:53:33
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [org.hibernate.orm.jpa]
+                -
+                HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-14 00:53:34
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [org.hibernate.orm.core]
+                -
+                HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-14 00:53:35
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.o.j.p.SpringPersistenceUnitInfo]
+                -
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 00:53:35
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.hibernate.orm.connections.pooling]
+                -
+                HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:a5fc44b8-df53-4354-8a31-e80ceac7e9ac]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: A5FC44B8-DF53-4354-8A31-E80CEAC7E9AC/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 00:53:37
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [org.hibernate.orm.core]
+                -
+                HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 00:53:37
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.o.j.LocalContainerEntityManagerFactoryBean]
+                -
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 00:53:37
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.d.j.r.q.QueryEnhancerFactories]
+                -
+                Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-14 00:53:37
+                WARN 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration]
+                -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 00:53:38
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.coyote.http11.Http11NioProtocol]
+                -
+                Starting ProtocolHandler ["http-nio-8080"]
+2026-07-14 00:53:38
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.boot.tomcat.TomcatWebServer]
+                -
+                Tomcat started on port 8080 (http) with context path '/'
+2026-07-14 00:53:38
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                Started SpringbootApplication in 9.904 seconds (process running for 12.187)
+2026-07-14 00:54:53
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.c.c.C.[Tomcat].[localhost].[/]]
+                -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-14 00:54:53
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.web.servlet.DispatcherServlet]
+                -
+                Initializing Servlet 'dispatcherServlet'
+2026-07-14 00:54:53
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.web.servlet.DispatcherServlet]
+                -
+                Completed initialization in 2 ms
+2026-07-14 00:55:49
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=4e2572f0-2b56-4c13-8f66-85f5ab77f693]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Incoming Request : GET /student/getstudent/0
+2026-07-14 00:56:18
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=4e2572f0-2b56-4c13-8f66-85f5ab77f693]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=getStudentById started
+2026-07-14 00:56:34
+                ERROR
+                [http-nio-8080-exec-2]
+                [requestId=4e2572f0-2b56-4c13-8f66-85f5ab77f693]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Method Validation Failed URI=/student/getstudent/0 Errors={id=[ID must be greater than 0]}
+2026-07-14 00:56:51
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=4e2572f0-2b56-4c13-8f66-85f5ab77f693]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=getStudentById completed Status=400 Time=42700 ms
+2026-07-14 00:57:18
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=4e2572f0-2b56-4c13-8f66-85f5ab77f693]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                REQUEST COMPLETED : GET /student/getstudent/0 Status=400 Time=130413ms
+2026-07-14 01:33:01
+                WARN 
+                [HikariPool-1:housekeeper]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.pool.HikariPool]
+                -
+                HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m40s340ms976µs699ns).
+2026-07-14 01:38:14
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=5e5d2e01-8199-4085-8dbb-0d2eafc0eaaa]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Incoming Request : GET /student/getstudent/0
+2026-07-14 01:38:19
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=5e5d2e01-8199-4085-8dbb-0d2eafc0eaaa]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=getStudentById started
+2026-07-14 01:38:32
+                ERROR
+                [http-nio-8080-exec-1]
+                [requestId=5e5d2e01-8199-4085-8dbb-0d2eafc0eaaa]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Method Validation Failed URI=/student/getstudent/0 Errors={id=[ID must be greater than 0]}
+2026-07-14 01:38:46
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=5e5d2e01-8199-4085-8dbb-0d2eafc0eaaa]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=getStudentById completed Status=400 Time=28868 ms
+2026-07-14 01:38:52
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=5e5d2e01-8199-4085-8dbb-0d2eafc0eaaa]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                REQUEST COMPLETED : GET /student/getstudent/0 Status=400 Time=48263ms
+2026-07-14 01:39:25
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=4475bd3e-2d10-4aeb-a3c6-c7b0a6f9659f]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Incoming Request : POST /student/add
+2026-07-14 01:39:30
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=4475bd3e-2d10-4aeb-a3c6-c7b0a6f9659f]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=addStudent started
+2026-07-14 01:39:38
+                ERROR
+                [http-nio-8080-exec-3]
+                [requestId=4475bd3e-2d10-4aeb-a3c6-c7b0a6f9659f]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Validation Failed URI=/student/add Errors={course=[Invalid Course]}
+2026-07-14 01:39:46
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=4475bd3e-2d10-4aeb-a3c6-c7b0a6f9659f]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=addStudent completed Status=400 Time=17581 ms
+2026-07-14 01:39:48
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=4475bd3e-2d10-4aeb-a3c6-c7b0a6f9659f]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                REQUEST COMPLETED : POST /student/add Status=400 Time=27007ms
+2026-07-14 01:40:01
+                INFO 
+                [http-nio-8080-exec-4]
+                [requestId=f2c0f39f-3d81-41b4-bd92-0c446d32b9a8]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Incoming Request : POST /student/add
+2026-07-14 01:40:03
+                INFO 
+                [http-nio-8080-exec-4]
+                [requestId=f2c0f39f-3d81-41b4-bd92-0c446d32b9a8]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=addStudent started
+2026-07-14 01:40:04
+                DEBUG
+                [http-nio-8080-exec-4]
+                [requestId=f2c0f39f-3d81-41b4-bd92-0c446d32b9a8]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Controller.StudentController]
+                -
+                Incoming student request StudentDto.StudentRequest(ID=123, name=sridhar s, course=java)
+2026-07-14 01:40:04
+                INFO 
+                [http-nio-8080-exec-4]
+                [requestId=f2c0f39f-3d81-41b4-bd92-0c446d32b9a8]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Service.StudentService]
+                -
+                Student creation request received
+2026-07-14 01:40:04
+                INFO 
+                [http-nio-8080-exec-4]
+                [requestId=f2c0f39f-3d81-41b4-bd92-0c446d32b9a8]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Service.StudentService]
+                -
+                Student created successfully. StudentId=123, Name=sridhar s
+2026-07-14 01:40:04
+                INFO 
+                [http-nio-8080-exec-4]
+                [requestId=f2c0f39f-3d81-41b4-bd92-0c446d32b9a8]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Controller.StudentController]
+                -
+                Student created successfully. StudentName=sridhar s
+2026-07-14 01:40:07
+                INFO 
+                [http-nio-8080-exec-4]
+                [requestId=f2c0f39f-3d81-41b4-bd92-0c446d32b9a8]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=addStudent completed Status=200 Time=4538 ms
+2026-07-14 01:40:10
+                INFO 
+                [http-nio-8080-exec-4]
+                [requestId=f2c0f39f-3d81-41b4-bd92-0c446d32b9a8]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                REQUEST COMPLETED : POST /student/add Status=200 Time=10068ms
+2026-07-14 01:42:52
+                INFO 
+                [SpringApplicationShutdownHook]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.boot.tomcat.GracefulShutdown]
+                -
+                Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-14 01:42:53
+                INFO 
+                [tomcat-shutdown]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.boot.tomcat.GracefulShutdown]
+                -
+                Graceful shutdown complete
+2026-07-14 01:42:53
+                INFO 
+                [SpringApplicationShutdownHook]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.o.j.LocalContainerEntityManagerFactoryBean]
+                -
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 01:42:53
+                INFO 
+                [SpringApplicationShutdownHook]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.HikariDataSource]
+                -
+                HikariPool-1 - Shutdown initiated...
+2026-07-14 01:42:53
+                INFO 
+                [SpringApplicationShutdownHook]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.HikariDataSource]
+                -
+                HikariPool-1 - Shutdown completed.

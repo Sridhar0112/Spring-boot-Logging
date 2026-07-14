@@ -1,0 +1,45 @@
+2026-07-14 00:53:37
+                WARN 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration]
+                -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 00:56:34
+                ERROR
+                [http-nio-8080-exec-2]
+                [requestId=4e2572f0-2b56-4c13-8f66-85f5ab77f693]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Method Validation Failed URI=/student/getstudent/0 Errors={id=[ID must be greater than 0]}
+2026-07-14 01:33:01
+                WARN 
+                [HikariPool-1:housekeeper]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.pool.HikariPool]
+                -
+                HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m40s340ms976µs699ns).
+2026-07-14 01:38:32
+                ERROR
+                [http-nio-8080-exec-1]
+                [requestId=5e5d2e01-8199-4085-8dbb-0d2eafc0eaaa]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Method Validation Failed URI=/student/getstudent/0 Errors={id=[ID must be greater than 0]}
+2026-07-14 01:39:38
+                ERROR
+                [http-nio-8080-exec-3]
+                [requestId=4475bd3e-2d10-4aeb-a3c6-c7b0a6f9659f]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.E.GlobalExceptionHandler]
+                -
+                Validation Failed URI=/student/add Errors={course=[Invalid Course]}
