@@ -139,3 +139,12 @@ Caused by: org.hibernate.id.IdentifierGenerationException: Identifier of entity 
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
 	... 76 common frames omitted
+2026-07-14 22:04:14
+                WARN 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration]
+                -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning

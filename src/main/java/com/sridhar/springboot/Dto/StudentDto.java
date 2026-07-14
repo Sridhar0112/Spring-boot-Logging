@@ -2,7 +2,10 @@ package com.sridhar.springboot.Dto;
 
 
 import com.sridhar.springboot.Validation.ValidCourse;
+import jakarta.persistence.Column;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,6 +34,16 @@ public class StudentDto {
         @NotBlank(message = "course must required")
         @ValidCourse
         private String course;
+        @NotBlank(message = "Email is required")
+        @Email(message = "Invalid email format")
+        private String email;
+
+        @NotBlank(message = "Phone number is required")
+        @Pattern(
+                regexp = "^[6-9]\\d{9}$",
+                message = "Invalid mobile number"
+        )
+        private String phone;
     }
     @Data
     @NoArgsConstructor

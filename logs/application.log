@@ -274,3 +274,586 @@ Caused by: org.hibernate.id.IdentifierGenerationException: Identifier of entity 
                 [com.zaxxer.hikari.HikariDataSource]
                 -
                 HikariPool-1 - Shutdown completed.
+2026-07-14 22:04:06
+                INFO 
+                [background-preinit]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.h.validator.internal.util.Version]
+                -
+                HV000001: Hibernate Validator 8.0.2.Final
+2026-07-14 22:04:06
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                Starting SpringbootApplication using Java 25.0.1 with PID 17960 (D:\chrome\springboot\springboot-logging\target\classes started by Administrator in D:\chrome\springboot\springboot-logging)
+2026-07-14 22:04:06
+                DEBUG
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                Running with Spring Boot v3.5.3, Spring v6.2.8
+2026-07-14 22:04:06
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                No active profile set, falling back to 1 default profile: "default"
+2026-07-14 22:04:08
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.d.r.c.RepositoryConfigurationDelegate]
+                -
+                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-14 22:04:08
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.d.r.c.RepositoryConfigurationDelegate]
+                -
+                Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interface.
+2026-07-14 22:04:09
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.w.e.tomcat.TomcatWebServer]
+                -
+                Tomcat initialized with port 8080 (http)
+2026-07-14 22:04:09
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.coyote.http11.Http11NioProtocol]
+                -
+                Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-14 22:04:09
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.catalina.core.StandardService]
+                -
+                Starting service [Tomcat]
+2026-07-14 22:04:09
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.catalina.core.StandardEngine]
+                -
+                Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-07-14 22:04:09
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.c.c.C.[Tomcat].[localhost].[/]]
+                -
+                Initializing Spring embedded WebApplicationContext
+2026-07-14 22:04:09
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.w.s.c.ServletWebServerApplicationContext]
+                -
+                Root WebApplicationContext: initialization completed in 3463 ms
+2026-07-14 22:04:10
+                DEBUG
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Filter 'requestLoggingFilter' configured for use
+2026-07-14 22:04:10
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.HikariDataSource]
+                -
+                HikariPool-1 - Starting...
+2026-07-14 22:04:10
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.pool.HikariPool]
+                -
+                HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e75a9a68-dd5e-4033-af1b-b44e1b645f8c user=SA
+2026-07-14 22:04:10
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.HikariDataSource]
+                -
+                HikariPool-1 - Start completed.
+2026-07-14 22:04:10
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.h.jpa.internal.util.LogHelper]
+                -
+                HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-14 22:04:10
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [org.hibernate.Version]
+                -
+                HHH000412: Hibernate ORM core version 6.6.18.Final
+2026-07-14 22:04:11
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.h.c.i.RegionFactoryInitiator]
+                -
+                HHH000026: Second-level cache disabled
+2026-07-14 22:04:11
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.o.j.p.SpringPersistenceUnitInfo]
+                -
+                No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-14 22:04:11
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.hibernate.orm.connections.pooling]
+                -
+                HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-14 22:04:13
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.h.e.t.j.p.i.JtaPlatformInitiator]
+                -
+                HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-14 22:04:13
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.o.j.LocalContainerEntityManagerFactoryBean]
+                -
+                Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 22:04:14
+                WARN 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration]
+                -
+                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-14 22:04:14
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.coyote.http11.Http11NioProtocol]
+                -
+                Starting ProtocolHandler ["http-nio-8080"]
+2026-07-14 22:04:14
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.w.e.tomcat.TomcatWebServer]
+                -
+                Tomcat started on port 8080 (http) with context path '/'
+2026-07-14 22:04:14
+                INFO 
+                [main]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [c.s.springboot.SpringbootApplication]
+                -
+                Started SpringbootApplication in 9.978 seconds (process running for 11.176)
+2026-07-14 22:05:44
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.a.c.c.C.[Tomcat].[localhost].[/]]
+                -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-14 22:05:44
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.web.servlet.DispatcherServlet]
+                -
+                Initializing Servlet 'dispatcherServlet'
+2026-07-14 22:05:44
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.web.servlet.DispatcherServlet]
+                -
+                Completed initialization in 3 ms
+2026-07-14 22:05:51
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Incoming Request : POST /student/add
+2026-07-14 22:05:56
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=addStudent started
+2026-07-14 22:05:57
+                DEBUG
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Controller.StudentController]
+                -
+                Incoming student request StudentDto.StudentRequest(ID=null, name=sridhar s, course=java)
+2026-07-14 22:05:59
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.logging.aspect.LoggingAspect]
+                -
+                Entering StudentService.AddStudent()
+2026-07-14 22:05:59
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Service.StudentService]
+                -
+                Student creation request received
+2026-07-14 22:05:59
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Service.StudentService]
+                -
+                Student created successfully. StudentId=1, Name=sridhar s
+2026-07-14 22:06:14
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.logging.aspect.LoggingAspect]
+                -
+                Completed StudentService.AddStudent() in 14841 ms
+2026-07-14 22:06:17
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Controller.StudentController]
+                -
+                Student created successfully. StudentName=sridhar s
+2026-07-14 22:06:23
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=addStudent completed Status=200 Time=28154 ms
+2026-07-14 22:06:23
+                INFO 
+                [http-nio-8080-exec-1]
+                [requestId=c4fa6a6b-7c09-44c4-bf8a-f98525bc42ea]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                REQUEST COMPLETED : POST /student/add Status=200 Time=38791ms
+2026-07-14 22:06:40
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Incoming Request : POST /student/add
+2026-07-14 22:06:44
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=addStudent started
+2026-07-14 22:06:44
+                DEBUG
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Controller.StudentController]
+                -
+                Incoming student request StudentDto.StudentRequest(ID=null, name=sridhar s, course=java)
+2026-07-14 22:06:47
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.logging.aspect.LoggingAspect]
+                -
+                Entering StudentService.AddStudent()
+2026-07-14 22:06:47
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Service.StudentService]
+                -
+                Student creation request received
+2026-07-14 22:06:47
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Service.StudentService]
+                -
+                Student created successfully. StudentId=2, Name=sridhar s
+2026-07-14 22:06:56
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.logging.aspect.LoggingAspect]
+                -
+                Completed StudentService.AddStudent() in 9418 ms
+2026-07-14 22:06:57
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Controller.StudentController]
+                -
+                Student created successfully. StudentName=sridhar s
+2026-07-14 22:06:58
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=addStudent completed Status=200 Time=15860 ms
+2026-07-14 22:06:58
+                INFO 
+                [http-nio-8080-exec-3]
+                [requestId=1d03777d-a66d-49d3-b602-432a264e135b]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                REQUEST COMPLETED : POST /student/add Status=200 Time=23864ms
+2026-07-14 22:07:08
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=1442487f-eede-4bb7-be2e-02ecdfa72c28]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                Incoming Request : GET /student/getstudent
+2026-07-14 22:07:09
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=1442487f-eede-4bb7-be2e-02ecdfa72c28]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=getStudent started
+2026-07-14 22:07:09
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=1442487f-eede-4bb7-be2e-02ecdfa72c28]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Controller.StudentController]
+                -
+                GET /student/getstudent request received
+2026-07-14 22:07:10
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=1442487f-eede-4bb7-be2e-02ecdfa72c28]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.logging.aspect.LoggingAspect]
+                -
+                Entering StudentService.getStudents()
+2026-07-14 22:07:10
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=1442487f-eede-4bb7-be2e-02ecdfa72c28]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Service.StudentService]
+                -
+                Fetching all students
+2026-07-14 22:07:10
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=1442487f-eede-4bb7-be2e-02ecdfa72c28]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.logging.aspect.LoggingAspect]
+                -
+                Completed StudentService.getStudents() in 544 ms
+2026-07-14 22:07:11
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=1442487f-eede-4bb7-be2e-02ecdfa72c28]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.Controller.StudentController]
+                -
+                Students fetched successfully. Count=2
+2026-07-14 22:07:11
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=1442487f-eede-4bb7-be2e-02ecdfa72c28]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.i.LoggingInterceptor]
+                -
+                Controller=StudentController Method=getStudent completed Status=200 Time=2469 ms
+2026-07-14 22:07:11
+                INFO 
+                [http-nio-8080-exec-2]
+                [requestId=1442487f-eede-4bb7-be2e-02ecdfa72c28]
+                [clientIp=]
+                [userAgent=]
+                [c.s.s.l.filter.RequestLoggingFilter]
+                -
+                REQUEST COMPLETED : GET /student/getstudent Status=200 Time=5754ms
+2026-07-14 22:40:50
+                INFO 
+                [SpringApplicationShutdownHook]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.w.e.tomcat.GracefulShutdown]
+                -
+                Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-14 22:40:51
+                INFO 
+                [tomcat-shutdown]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.b.w.e.tomcat.GracefulShutdown]
+                -
+                Graceful shutdown complete
+2026-07-14 22:40:51
+                INFO 
+                [SpringApplicationShutdownHook]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [o.s.o.j.LocalContainerEntityManagerFactoryBean]
+                -
+                Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-14 22:40:51
+                INFO 
+                [SpringApplicationShutdownHook]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.HikariDataSource]
+                -
+                HikariPool-1 - Shutdown initiated...
+2026-07-14 22:40:51
+                INFO 
+                [SpringApplicationShutdownHook]
+                [requestId=]
+                [clientIp=]
+                [userAgent=]
+                [com.zaxxer.hikari.HikariDataSource]
+                -
+                HikariPool-1 - Shutdown completed.

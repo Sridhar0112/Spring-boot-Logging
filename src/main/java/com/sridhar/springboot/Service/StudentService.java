@@ -3,6 +3,7 @@ package com.sridhar.springboot.Service;
 import com.sridhar.springboot.Dto.StudentDto;
 import com.sridhar.springboot.Exception.StudentException;
 import com.sridhar.springboot.Repositary.StudentRepository;
+import com.sridhar.springboot.logging.util.LoggingMaskUtil;
 import com.sridhar.springboot.models.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,7 @@ public class StudentService {
     }
 
     public Student AddStudent(StudentDto.StudentRequest student){
-        log.info("Student creation request received");
+        log.info("Student creation started. {}", LoggingMaskUtil.mask(student));
         if(student==null || student.getCourse()==null || student.getName()==null){
             log.warn("Student creation failed. Mandatory fields missing");
             throw new StudentException("Student details cannot be empty");
@@ -30,12 +31,10 @@ public class StudentService {
         s.setCourse(student.getCourse());
         s.setID(student.getID());
         s.setName(student.getName());
+        s.setEmail(student.getEmail());
+        s.setPhone(student.getPhone());
         Student savedstudent= studentRepository.save(s);
-        log.info(
-                "Student created successfully. StudentId={}, Name={}",
-                savedstudent.getID(),
-                savedstudent.getName()
-        );
+        log.info("Student created successfully. {}", LoggingMaskUtil.mask(savedstudent));
         return savedstudent;
     }
 
